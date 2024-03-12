@@ -1,6 +1,6 @@
 #include "header.h"
 
-Coordinate<double, double> midpoint(Coordinate<int, int> c1, Coordinate<int, int> c2)
+Coordinate<double, double> midpoint(Coordinate<double, double> c1, Coordinate<double, double> c2)
 {
     Coordinate<double, double> midpoint;
     midpoint.x = (c1.x + c2.x) / 2.0;
@@ -10,5 +10,14 @@ Coordinate<double, double> midpoint(Coordinate<int, int> c1, Coordinate<int, int
 
 void print(Coordinate<double, double> c)
 {
-    cout << "(" << c.x << ", " << c.y << ")";
+    cout << "The midpoint is (" << c.x << ", " << c.y << ").\n";
+}
+
+void collect(Coordinate<double, double>& c1, Coordinate<double, double>& c2)
+{
+    cout << "Enter the first coordinate (ex. 1 2 for (1,2)): ";
+    cin >> c1.x >> c1.y;
+    cout << "Enter the second coordinate (ex. 1 2 for (1,2)): ";
+    cin >> c2.x >> c2.y;
+    cout << endl;
 }
