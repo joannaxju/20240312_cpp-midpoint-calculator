@@ -2,9 +2,9 @@
 
 int main() 
 {
-    Coordinate c1 = {1, 2};
-    Coordinate c2 = {3, 6};
-    Coordinate mid = midpoint(c1, c2);
+    Coordinate<int, int> c1 = {1, 2};
+    Coordinate<int, int> c2 = {6, 9};
+    Coordinate<double, double> mid = midpoint(c1, c2);
     print(mid);
     
     return 0;

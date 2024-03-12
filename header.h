@@ -6,9 +6,9 @@ using namespace std;
 
 #include "coordinate.h"
 
-Coordinate midpoint(Coordinate, Coordinate);
+Coordinate<double, double> midpoint(Coordinate<int, int> c1, Coordinate<int, int> c2);
 
-void print(Coordinate c);
+void print(Coordinate<double, double> c);
 
 #include "functions.cpp"
 

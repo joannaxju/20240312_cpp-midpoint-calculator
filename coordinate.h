@@ -1,6 +1,6 @@
-//template <typename T>
+template <typename T, typename S>
 struct Coordinate
 {
-    //T x, y;
-    int x, y;
+    T x;
+    S y;
 };
